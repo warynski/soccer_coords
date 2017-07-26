@@ -117,11 +117,3 @@ requestAnimationFrame(drawPlayers);
 
 
 
-
-
-
-
-
-
-
-init();
