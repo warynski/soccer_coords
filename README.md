@@ -9,3 +9,5 @@
 ###### slider, which changes the current time and players positions on the field
 
 ##### This is not about graphic design.
+###### Deployed app:
+http://bodep.pl/soccer/
