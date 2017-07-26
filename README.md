@@ -7,3 +7,5 @@
 ###### each player on the field must be represented as a circle with a player's id inside it
 ###### passed time and total time counters
 ###### slider, which changes the current time and players positions on the field
+
+##### This is not about graphic design.
