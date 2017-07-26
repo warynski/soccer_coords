@@ -1,7 +1,12 @@
+var positions = data.player_positions;
+  var team = new Array;
+
+  team.push([1,2,3]);
+  team.push([4,5,6]);
+
 document.addEventListener('DOMContentLoaded', function(){
 
   var positions = data.player_positions;
-  var team = [];
   var count = 0;
   var countMax = positions.length-1;
   var beginAnim = false;
@@ -13,6 +18,8 @@ document.addEventListener('DOMContentLoaded', function(){
   var c = canvas.getContext('2d');
   c.fillStyle = '#555';
   c.fillRect(0,0,canvas.width,canvas.height);
+
+
 
   function Player() {
     id = 0;
@@ -45,6 +52,18 @@ document.addEventListener('DOMContentLoaded', function(){
 
   }
 
+
+
+  var dupa = 0;
+
+  // for (var i = 0; i <= positions.length-1; i++) {
+  //   for (j=0; j<= positions[i].length-1; j++) {
+  //     if ( dupa < (positions[i].length)) dupa = (positions[i].length);
+  //       console.log(dupa);
+  //   }
+  //   if ( i === positions.length-1) alert(i + ' ' + dupa);
+  // }
+
   player = new Player;
 
   button.addEventListener('click', function(){
@@ -54,7 +73,9 @@ document.addEventListener('DOMContentLoaded', function(){
     } else {
       timer = setInterval(function(){
         for (var i = 0; i < positions[count].length-1; i++) {
-          // console.log(count);
+
+          
+
           player.id = positions[count][i][0];
           player.posX = positions[count][i][1];
           player.posY = positions[count][i][2];
@@ -67,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
         }   
         count += 1;
-      },100)
+      },1)
     }
   })
 

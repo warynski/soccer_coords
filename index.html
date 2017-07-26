@@ -4,17 +4,25 @@
 	<meta charset="UTF-8">
   <title>Coach Test Exercise</title>
   <style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
   	button {
   		margin-top: 10px;
+		padding: 10px 20px;
   	}
   	.panel {
+		position: relative;
   		width: 1200px;
   		height: 30px;
   		border: 2px solid black;
   	}
-  	.pointer {
+  	#pointer {
+		position: absolute;
   		width:20px;
-  		height: 30px;
+  		height: 26px;
   		background-color: green;
   	}
   </style>
@@ -23,13 +31,14 @@
 
 	<canvas id="canvas" width="1200 px" height="800 px"></canvas>	
 	<div class="panel">
-		<div class="pointer"></div>
+		<div id="pointer" ></div>
 	</div>
 	<button id="button">PLAY/PAUSE</button>
 
 
 	<script src="data.js"></script>
-	<script src="main.js"></script>
+	<!--<script src="main.js"></script>-->
+	<script src="app.js"></script>
 <!-- 	<script>
 		console.log(data)
 	</script> -->
