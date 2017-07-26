@@ -13,7 +13,7 @@
   		margin-top: 10px;
 		padding: 10px 20px;
   	}
-  	.panel {
+  	#panel {
 		position: relative;
   		width: 1200px;
   		height: 30px;
@@ -24,23 +24,36 @@
   		width:20px;
   		height: 26px;
   		background-color: green;
+		cursor: pointer;
   	}
+	#timer {
+		clear: both;
+		width: 1200px;
+		height: 30px;
+	}
+	#current-time {
+		float: left;
+	}
+	#total-time {
+		float: right;
+	}
   </style>
 </head>
 <body>
 
-	<canvas id="canvas" width="1200 px" height="800 px"></canvas>	
-	<div class="panel">
+	<canvas id="canvas" width="1200 px" height="800 px"></canvas>
+	<div id="timer">
+		<div id="current-time">current time</div>
+		<div id="total-time">total time</div>
+	</div>
+	<div id="panel">
 		<div id="pointer" ></div>
 	</div>
 	<button id="button">PLAY/PAUSE</button>
 
 
 	<script src="data.js"></script>
-	<!--<script src="main.js"></script>-->
 	<script src="app.js"></script>
-<!-- 	<script>
-		console.log(data)
-	</script> -->
+
 </body>
 </html>
